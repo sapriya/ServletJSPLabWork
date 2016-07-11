@@ -18,8 +18,7 @@ public class OnearmedBandit {
 	public static void main(String args[]) throws InterruptedException {
               int[] spinPos = new int[3];
                 for (int j = 0; j < 3; j++) {
-                    int random = ThreadLocalRandom.current().nextInt(0,5);
-                    spinPos[j] = random;
+                    spinPos[j] = ThreadLocalRandom.current().nextInt(0,5);
                 }
                 for (int k=0;k<3;k++){
                     if(k<spinPos.length-1)
