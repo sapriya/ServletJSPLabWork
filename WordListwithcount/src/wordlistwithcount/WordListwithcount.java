@@ -30,6 +30,7 @@ public class WordListwithcount {
                     while ((line = br.readLine()) != null) {
                         String[] wordArray = line.split("\\W+");
                         for(String w : wordArray){
+                            w = w.toLowerCase();
                         if(wordMap.containsKey(w)){
                         wordMap.put(w, wordMap.get(w) + 1);
                         }else{
